@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pharmacy Website</title>
+</head>
+<body>
+
+  
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Our Medicines</a>
+                <ul>
+                    <li><a href="products.html">Fever</a></li>
+                    <li><a href="products.html">Muscle Pains</a></li>
+                    <li><a href="index.html">Cold & Cough</a></li>
+                </ul>
+            </li>
+            <li><a href="products.html">Health Care</a>
+                <ul>
+                    <li><a href="products.html">Baby Care</a></li>
+                    <li><a href="products.html">Skin Care</a></li>
+                    <li><a href="products.html">Home Care</a></li>
+                    <li><a href="products.html">Personal Care</a></li>
+                    <li><a href="products.html">Pet Care</a></li>
+                </ul>
+            </li>
+            <li><a href="labtest.html">Lab Test</a></li>
+        </ul>
+    </nav>
+<br>
+<br><br>
+  <header>
+        <h1>Pharmacy</h1>
+    </header>
+
+
+    <form class="lab-test-form" action="#" method="post">
+        <h2>Lab Test Booking Form</h2>
+
+        <!-- Patient Contact Details -->
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="patientId">Patient ID:</label>
+        <input type="text" id="patientId" name="patientId">
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Address -->
+        <label>Address:</label>
+        <input type="text" placeholder="House Number" name="houseNumber" required>
+        <input type="text" placeholder="Street" name="street" required>
+        <input type="text" placeholder="Area" name="area" required>
+        
+        <label for="district">District:</label>
+        <select id="district" name="district" required>
+            <option value="" disabled selected>Choose</option>
+            <!-- Add your district options here -->
+            <option value="district1">District 1</option>
+            <option value="district2">District 2</option>
+            <option value="district3">District 3</option>
+        </select>
+
+        <!-- Choose Test Type -->
+        <label>Choose Test Type:</label>
+        <div>
+            <input type="checkbox" id="cbc" name="testType" value="CBC">
+            <label for="cbc">CBC</label>
+        </div>
+        <div>
+            <input type="checkbox" id="completeUrine" name="testType" value="Complete Urine">
+            <label for="completeUrine">Complete Urine</label>
+        </div>
+        <div>
+            <input type="checkbox" id="lipidProfile" name="testType" value="Lipid Profile">
+            <label for="lipidProfile">Lipid Profile</label>
+        </div>
+        <div>
+            <input type="checkbox" id="tsh" name="testType" value="Thyroid Stimulating Hormone(TSH)">
+            <label for="tsh">Thyroid Stimulating Hormone(TSH)</label>
+        </div>
+        <div>
+            <input type="checkbox" id="glucoseTest" name="testType" value="Glucose Test">
+            <label for="glucoseTest">Glucose Test</label>
+        </div>
+
+        <!-- Hard Copy of the Report -->
+        <label>Do you want a hard copy of the report?</label>
+        <div>
+            <input type="radio" id="yes" name="hardCopy" value="Yes">
+            <label for="yes">Yes</label>
+        </div>
+        <div>
+            <input type="radio" id="no" name="hardCopy" value="No">
+            <label for="no">No</label>
+        </div>
+
+        <!-- Select Date and Time -->
+        <label for="date">Select Your Comfortable Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Select Your Comfortable Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <!-- Reset and Submit Buttons -->
+        <div>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+   
+   <div style="position: absolute; top: 135px; left: 670px;">
+
+<img class="fixed-image" src="Images/Lab-Test/lab-test.jpg" alt="Fixed Image">
+</div>
+
+  
+
+
+    <footer>
+        <p>@copyright. </p>
+    </footer>
+
+   
+
+  
+
+</body>
+</html>
